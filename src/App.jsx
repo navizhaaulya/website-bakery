@@ -7,6 +7,7 @@ function App() {
     <>
     <Navbar />
       <h1>HALO</h1>
+      <h2>Ini perubahan di github</h2>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus et dolor blanditiis iste! Nihil aliquam vitae fugiat placeat. Nemo enim quae modi dignissimos accusamus vero repudiandae, nobis dolorum fuga quibusdam.</p>
       <p>Lorem ipsum dolor sit.</p>
       <About />
