@@ -1,16 +1,13 @@
-import { Navbar } from "./components/navbar/Navbar"
-import About from "./pages/About"
+import Navbar from "./components/navbar/Navbar"
 import Homepage from "./components/section/Homepage"
 
 function App() {
-
   return (
     <>
     <Navbar />
-      <About />
-      <Homepage />
+    <Homepage />
     </>
-  )
+  );
 }
 
 export default App
