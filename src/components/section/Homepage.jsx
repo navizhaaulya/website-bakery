@@ -1,6 +1,9 @@
 import React from "react";
 import bgImage from "../assets/bg.png";
 import mainImg from "../assets/fo.png";
+import Button from "../elements/Button";
+import Testing from "../elements/Testing";
+import Card from "../elements/Card";
 
 const Homepage = () => {
   return (
@@ -53,7 +56,16 @@ const Homepage = () => {
       {/* Highlight Product */}
       <section>
         <div>
+        <Card>
+      <Button name="coba1" text="ini button 1" />
+      <Button name="coba2" text="ini button 2" />
+      <Button name="coba3" text="ini button 34" />
+      <Testing name="coba" />
+      </Card>
+
+      <Card>
         
+      </Card>
         </div>
       </section>
     </>
