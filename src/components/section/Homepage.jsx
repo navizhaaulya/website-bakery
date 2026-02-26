@@ -1,8 +1,6 @@
 import React from "react";
 import bgImage from "../assets/bg.png";
 import mainImg from "../assets/fo.png";
-import Button from "../elements/Button";
-import Testing from "../elements/Testing";
 import Card from "../elements/Card";
 
 const Homepage = () => {
@@ -55,17 +53,14 @@ const Homepage = () => {
 
       {/* Highlight Product */}
       <section>
-        <div>
-        <Card>
-      <Button name="coba1" text="ini button 1" />
-      <Button name="coba2" text="ini button 2" />
-      <Button name="coba3" text="ini button 34" />
-      <Testing name="coba" />
-      </Card>
+        <div className="bg-gray-50 p-8 grid grid-rows-none grid-cols-3 gap-5">
+          <Card className="min-w-min">
+            <h2>PRODUCT</h2>
+            <p>produk unggulan</p>
+          </Card>
 
-      <Card>
-        
-      </Card>
+          <Card>2</Card>
+          <Card>3</Card>
         </div>
       </section>
     </>
