@@ -2,6 +2,8 @@ import React from "react";
 import bgImage from "../assets/bg.png";
 import mainImg from "../assets/fo.png";
 import Card from "../elements/Card";
+import Footer from "../footer/footer";
+
 
 const Homepage = () => {
   return (

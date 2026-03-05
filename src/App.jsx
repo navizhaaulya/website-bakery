@@ -1,5 +1,5 @@
 import { Routes } from "react-router-dom";
-import Footer from "./components/footer/footer";
+import Footer from "../src/components/footer/footer";
 import Navbar from "./components/navbar/Navbar";
 import Homepage from "./components/section/Homepage";
 
@@ -15,4 +15,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
