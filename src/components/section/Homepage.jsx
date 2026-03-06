@@ -3,7 +3,9 @@ import bgImage from "../assets/bg.png";
 import mainImg from "../assets/fo.png";
 import Card from "../elements/Card";
 import Footer from "../footer/footer";
-
+import nastar from "../assets/nastar.png";
+import kastengel from "../assets/kastengel.png";
+import salju from "../assets/salju.png";
 
 const Homepage = () => {
   return (
@@ -54,15 +56,76 @@ const Homepage = () => {
       </section>
 
       {/* Highlight Product */}
-      <section>
-        <div className="bg-gray-50 p-8 grid grid-rows-none grid-cols-3 gap-5">
-          <Card className="min-w-min">
-            <h2>PRODUCT</h2>
-            <p>produk unggulan</p>
+      <section className="mt-20">
+        <div>
+          <h1 className="font-bold text-3xl text-center">BEST SELLER</h1>
+        </div>
+        <div className="max-w-4xl mx-auto flex justify-center gap-4 mt-10 p-8">
+          <Card className="w-2/3">
+            <img src={nastar} alt="nastar" className="w-2/3" />
+            <h3>Nastar</h3>
           </Card>
 
-          <Card>2</Card>
-          <Card>3</Card>
+          <Card className="w-2/3">
+            <img src={kastengel} alt="kastengel" className="w-2/3" />
+            <h3 className="text-lg font-semibold mt-3 text-gray-800">
+              Kastengel
+            </h3>
+          </Card>
+
+          <Card className="w-2/3">
+            <img src={salju} alt="salju" className="w-2/3" />
+            <h3>Putri Salju</h3>
+          </Card>
+        </div>
+      </section>
+
+      <section className="mt-20">
+        <h2 className="text-2xl font-bold text-center mb-10">
+          Testimoni Pelanggan
+        </h2>
+
+        <div className="flex justify-center gap-4">
+          <Card className="w-64">
+            <div className="text-yellow-400 mb-2">⭐⭐⭐⭐⭐</div>
+
+            <p className="text-gray-600 text-sm">
+              Kue nastarnya benar-benar enak! Teksturnya lembut dan isi selai
+              nanasnya terasa pas, tidak terlalu manis tapi tetap nikmat. Cocok
+              banget untuk disajikan saat berkumpul bersama keluarga atau ketika
+              ada tamu datang. Setelah mencobanya, keluarga saya langsung suka
+              dan ingin mencicipinya lagi.
+            </p>
+
+            <h4 className="mt-4 font-semibold">- Rina</h4>
+          </Card>
+
+          <Card className="w-64">
+            <div className="text-yellow-400 mb-2">⭐⭐⭐⭐⭐</div>
+
+            <p className="text-gray-600 text-sm">
+              Kastengelnya gurih banget dan aroma kejunya terasa sejak pertama
+              digigit. Teksturnya renyah tapi tidak keras sehingga sangat nyaman
+              dimakan. Rasanya juga tidak terlalu asin dan sangat pas di lidah.
+              Menurut saya ini salah satu kastengel terbaik yang pernah saya
+              coba.
+            </p>
+
+            <h4 className="mt-4 font-semibold">- Andi</h4>
+          </Card>
+
+          <Card className="w-64">
+            <div className="text-yellow-400 mb-2">⭐⭐⭐⭐⭐</div>
+
+            <p className="text-gray-600 text-sm">
+              Putri saljunya lembut dan langsung lumer di mulut. Taburan gula
+              halusnya pas dan tidak berlebihan sehingga tetap terasa ringan
+              saat dimakan. Rasanya manis lembut dan sangat cocok dinikmati
+              bersama teh atau kopi saat santai di rumah.
+            </p>
+
+            <h4 className="mt-4 font-semibold">- Sari</h4>
+          </Card>
         </div>
       </section>
     </>
