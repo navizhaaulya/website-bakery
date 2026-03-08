@@ -5,11 +5,10 @@ import nastar from "../components/assets/nastar.png";
 import kastengel from "../components/assets/kastengel.png";
 import salju from "../components/assets/salju.png";
 import Card from "../components/elements/Card";
+import TestimonialSection from "./testimonial";
 
 const topProducts = [
   { name: "Nastar", image: nastar },
-  { name: "Kastengel", image: kastengel },
-  { name: "Putri Salju", image: salju },
   { name: "Kastengel", image: kastengel },
   { name: "Putri Salju", image: salju },
 ];
@@ -59,45 +58,7 @@ const Homepage = () => {
       </section>
 
       {/* testimoni */}
-      <section className="py-20">
-        <h2 className="text-3xl font-bold text-center mb-10">
-          Testimoni Pelanggan
-        </h2>
-        <div className="flex justify-center gap-4">
-          <Card className="w-64">
-            <div className="text-yellow-400 mb-2">⭐⭐⭐⭐⭐</div>
-            <p className="text-gray-600 text-sm">
-              Kue nastarnya benar-benar enak! Teksturnya lembut dan isi selai
-              nanasnya terasa pas, tidak terlalu manis tapi tetap nikmat. Cocok
-              banget untuk disajikan saat berkumpul bersama keluarga atau ketika
-              ada tamu datang. Setelah mencobanya, keluarga saya langsung suka
-              dan ingin mencicipinya lagi.
-            </p>
-            <h4 className="mt-4 font-semibold">- Rina</h4>
-          </Card>
-          <Card className="w-64">
-            <div className="text-yellow-400 mb-2">⭐⭐⭐⭐⭐</div>
-            <p className="text-gray-600 text-sm">
-              Kastengelnya gurih banget dan aroma kejunya terasa sejak pertama
-              digigit. Teksturnya renyah tapi tidak keras sehingga sangat nyaman
-              dimakan. Rasanya juga tidak terlalu asin dan sangat pas di lidah.
-              Menurut saya ini salah satu kastengel terbaik yang pernah saya
-              coba.
-            </p>
-            <h4 className="mt-4 font-semibold">- Andi</h4>
-          </Card>
-          <Card className="w-64">
-            <div className="text-yellow-400 mb-2">⭐⭐⭐⭐⭐</div>
-            <p className="text-gray-600 text-sm">
-              Putri saljunya lembut dan langsung lumer di mulut. Taburan gula
-              halusnya pas dan tidak berlebihan sehingga tetap terasa ringan
-              saat dimakan. Rasanya manis lembut dan sangat cocok dinikmati
-              bersama teh atau kopi saat santai di rumah.
-            </p>
-            <h4 className="mt-4 font-semibold">- Sari</h4>
-          </Card>
-        </div>
-      </section>
+      <TestimonialSection />
 
       {/* lokasi */}
       <section className="mb-10">
