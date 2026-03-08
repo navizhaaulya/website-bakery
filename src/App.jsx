@@ -1,7 +1,6 @@
-import { Routes } from "react-router-dom";
-import Footer from "../src/components/footer/footer";
+import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
-import Homepage from "./components/section/Homepage";
+import Homepage from "./pages/Homepage";
 
 function App() {
   return (
@@ -15,4 +14,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
