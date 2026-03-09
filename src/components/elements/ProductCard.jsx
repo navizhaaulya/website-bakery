@@ -10,7 +10,10 @@ const ProductCard = ({ title, products }) => {
         {products.map((product, index) => (
           <Card key={index} className="w-60">
             <img src={product.image} alt={product.name} />
-            <h3>{product.name}</h3>
+            <strong>
+              <h3>{product.name}</h3>
+            </strong>
+            <p>{product.desc}</p>
           </Card>
         ))}
       </div>

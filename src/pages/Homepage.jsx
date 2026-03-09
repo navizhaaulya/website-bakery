@@ -1,15 +1,43 @@
-import bgImage from "../components/assets/hero-section.jpg";
-import mainImg from "../components/assets/about-us.jpg";
+import heroImg from "../components/assets/hero-section.jpg";
+import aboutImg from "../components/assets/about-us.png";
+import ServiceCard from "../components/elements/ServiceCard";
+import sfresh from "../components/assets/service-fresh.jpg";
+import shomemade from "../components/assets/service-homemade.jpg";
+import spremium from "../components/assets/service-premium.jpg";
+import scustom from "../components/assets/service-custom.jpg";
 import ProductCard from "../components/elements/ProductCard";
 import nastar from "../components/assets/nastar.png";
 import kastengel from "../components/assets/kastengel.png";
 import salju from "../components/assets/salju.png";
-import TestimonialSection from "../components/sections/testimonial";
+import TestimonialSection from "../components/sections/Testimonial";
 
 const topProducts = [
-  { name: "Nastar", image: nastar },
-  { name: "Kastengel", image: kastengel },
-  { name: "Putri Salju", image: salju },
+  { name: "Nastar", image: nastar, desc: "3 kata" },
+  { name: "Kastengel", image: kastengel, desc: "3 kata" },
+  { name: "Putri Salju", image: salju, desc: "3 kata" },
+];
+
+const services = [
+  {
+    title: "Freshly Baked",
+    image: sfresh,
+    desc: "Freshly baked with care to ensure every cookie tastes warm, soft, and delicious.",
+  },
+  {
+    title: "Homemade Recipe",
+    image: shomemade,
+    desc: "Made with traditional homemade recipes that bring a comforting and authentic taste.",
+  },
+  {
+    title: "Premium Ingredients",
+    image: spremium,
+    desc: "We use high-quality ingredients to bring out the best flavor in every bite.",
+  },
+  {
+    title: "Custom Orders",
+    image: scustom,
+    desc: "Personalize your cookie selection to suit your taste or special event.",
+  },
 ];
 
 const Homepage = () => {
@@ -18,7 +46,7 @@ const Homepage = () => {
       {/* hero section */}
       <section
         className="h-screen w-screen bg-cover bg-center flex items-center justify-center"
-        style={{ backgroundImage: `url(${bgImage})` }}
+        style={{ backgroundImage: `url(${heroImg})` }}
       >
         <div>
           <p className="slogan text-4xl text-center pt-20 font-semibold">
@@ -31,28 +59,42 @@ const Homepage = () => {
       </section>
 
       {/* about us */}
-      <section className="py-20">
-        <div className="max-w-5xl mx-auto flex items-center justify-center gap-24">
-          <img src={mainImg} alt="Logo" className="w-80 rounded-xl shadow-lg" />
-          <div>
-            <h2 className="text-3xl font-bold mb-4">About Us</h2>
-            <p className="max-w-md">
-              Our journey began with a simple love for baking and sharing
-              homemade treats. Over time, what started in a small kitchen grew
-              through the support of those who enjoyed our cookies. Today, we
-              continue to craft premium butter cookies and traditional
-              delicacies with the same care, quality, and homemade warmth in
-              every batch.
-            </p>
-          </div>
+      <section
+        className="h-screen w-screen bg-cover bg-center flex items-center justify-center"
+        style={{ backgroundImage: `url(${aboutImg})` }}
+      >
+        <div>
+          <h2 className="text-3xl font-bold mb-4">About Us</h2>
+          <p className="max-w-md">
+            Our journey began with a simple love for baking and sharing homemade
+            treats. Over time, what started in a small kitchen grew through the
+            support of those who enjoyed our cookies. Today, we continue to
+            craft premium butter cookies and traditional delicacies with the
+            same care, quality, and homemade warmth in every batch.
+          </p>
+        </div>
+      </section>
+
+      {/* our services */}
+      <section>
+        <h1 className="font-bold text-3xl text-center">
+          What Makes Our Cookies Special
+        </h1>
+        <div className="flex justify-center gap-8 mt-10 flex-wrap">
+          {services.map((service, index) => (
+            <ServiceCard
+              key={index}
+              title={service.title}
+              image={service.image}
+              desc={service.desc}
+            />
+          ))}
         </div>
       </section>
 
       {/* top products */}
       <section className="">
-        <div>
-          <h1 className="font-bold text-3xl text-center">Best Seller</h1>
-        </div>
+        <h1 className="font-bold text-3xl text-center">Best Seller</h1>
         <ProductCard products={topProducts} />
       </section>
 
