@@ -13,9 +13,9 @@ import salju from "../components/assets/salju.png";
 import TestimonialSection from "../components/sections/Testimonial";
 
 const topProducts = [
-  { name: "Nastar", image: nastar, desc: "3 kata" },
-  { name: "Kastengel", image: kastengel, desc: "3 kata" },
-  { name: "Putri Salju", image: salju, desc: "3 kata" },
+  { name: "Nastar", image: nastar, desc: "Sweet pineapple filling", price: "35k" },
+  { name: "Kastengel", image: kastengel, desc: "Savory cheese cookie", price: "35k" },
+  { name: "Putri Salju", image: salju, desc: "Soft sugar cookie", price: "30k" },
 ];
 
 const services = [

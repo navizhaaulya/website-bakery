@@ -6,9 +6,9 @@ const Bantuan = () => {
 
   const faqs = [
     {
-      pertanyaan: "Apakah cookies dibuat setiap hari?",
+      pertanyaan: "Apakah kue dibuat fresh?",
       jawaban:
-        "Ya, cookies kami dibuat secara homemade dengan bahan berkualitas dan dipanggang secara berkala untuk menjaga kesegaran dan rasa terbaik.",
+        "Semua kue dibuat fresh dan homemade. Kami membuat kue secara berkala agar kualitas rasa, tekstur, dan kesegarannya tetap terjaga saat sampai ke tangan pelanggan.",
     },
     {
       pertanyaan: "Berapa lama cookies dapat bertahan?",
@@ -21,14 +21,14 @@ const Bantuan = () => {
         "Tentu saja. Kami menerima pemesanan dalam jumlah besar untuk acara, hampers, atau kebutuhan khusus lainnya.",
     },
     {
-      pertanyaan: "Apakah tersedia pilihan kemasan untuk hadiah?",
-      jawaban:
-        "Ya, kami menyediakan beberapa pilihan kemasan yang cocok untuk hadiah, hampers, atau acara spesial.",
-    },
-    {
       pertanyaan: "Bagaimana cara melakukan pemesanan?",
       jawaban:
-        "Pemesanan dapat dilakukan dengan menghubungi kami melalui WhatsApp atau media sosial yang tersedia di website ini.",
+        "Pemesanan bisa dilakukan dengan mudah melalui WhatsApp atau kontak yang tersedia di website. Pilih produk yang diinginkan, lalu hubungi kami untuk konfirmasi stok dan pengiriman.",
+    },
+    {
+      pertanyaan: "Apakah tersedia layanan pengiriman?",
+      jawaban:
+        "Ya, kami menyediakan layanan pengiriman ke area sekitar. Untuk lokasi yang lebih jauh, pengiriman dapat dilakukan melalui kurir atau jasa ekspedisi yang aman untuk makanan.",
     },
   ];
 
