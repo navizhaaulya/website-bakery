@@ -1,7 +1,7 @@
-import Card from "../components/elements/Card";
 import nastar from "../components/assets/nastar.png";
 import kastengel from "../components/assets/kastengel.png";
 import salju from "../components/assets/salju.png";
+import { Card, CardBody, CardImg, CardText, CardTitle } from "reactstrap";
 
 const products = [
   {
@@ -59,17 +59,28 @@ const Katalog = () => {
       </div>
 
       {/* grid produk */}
-      <div className="grid grid-cols-4 gap-6">
+      <div className="grid grid-cols-6 gap-4">
         {products.map((product, index) => (
-          <Card key={index} className="p-4">
-            <img
-              src={product.image}
-              alt={product.name}
-              className="rounded-md mb-3"
-            />
-            <h3 className="font-semibold text-lg">{product.name}</h3>
-            <p className="text-sm">{product.desc}</p>
-            <p className="font-bold mt-2">{product.price}</p>
+          <Card
+            key={index}
+            className=" border shadow-md rounded-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer"
+          >
+            <div className="flex  p-2">
+              <CardImg
+                top
+                src={product.image}
+                alt={product.name}
+                className="w-full justify-center object-cover rounded-md"
+              />
+            </div>
+
+            <CardBody className="p-4">
+              <CardTitle tag="h6">{product.name}</CardTitle>
+              <CardText className="text-sm text-gray-500">
+                {product.desc}
+              </CardText>
+              <strong>{product.price}</strong>
+            </CardBody>
           </Card>
         ))}
       </div>

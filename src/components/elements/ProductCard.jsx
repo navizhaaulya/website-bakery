@@ -1,4 +1,4 @@
-import Card from "../elements/Card";
+import { Card } from "reactstrap";
 
 const ProductCard = ({ title, products }) => {
   return (

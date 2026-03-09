@@ -5,6 +5,7 @@ import sfresh from "../components/assets/service-fresh.jpg";
 import shomemade from "../components/assets/service-homemade.jpg";
 import spremium from "../components/assets/service-premium.jpg";
 import scustom from "../components/assets/service-custom.jpg";
+import spackage from "../components/assets/service-package.jpg";
 import ProductCard from "../components/elements/ProductCard";
 import nastar from "../components/assets/nastar.png";
 import kastengel from "../components/assets/kastengel.png";
@@ -38,6 +39,11 @@ const services = [
     image: scustom,
     desc: "Personalize your cookie selection to suit your taste or special event.",
   },
+  {
+    title: "Perfect for Gifts",
+    image: spackage,
+    desc: "Beautifully packed cookies that are perfect for gifts, celebrations, or special moments.",
+  },
 ];
 
 const Homepage = () => {
@@ -64,8 +70,12 @@ const Homepage = () => {
         style={{ backgroundImage: `url(${aboutImg})` }}
       >
         <div>
-          <h2 className="text-3xl font-bold mb-4">About Us</h2>
-          <p className="max-w-md">
+          <h2 className="text-3xl font-bold mb-4 text-center">
+            From a Small Kitchen
+            <br />
+            to Something Truly Special
+          </h2>
+          <p className="max-w-md text-center">
             Our journey began with a simple love for baking and sharing homemade
             treats. Over time, what started in a small kitchen grew through the
             support of those who enjoyed our cookies. Today, we continue to
@@ -76,7 +86,7 @@ const Homepage = () => {
       </section>
 
       {/* our services */}
-      <section>
+      <section className="mb-20">
         <h1 className="font-bold text-3xl text-center">
           What Makes Our Cookies Special
         </h1>
