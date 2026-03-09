@@ -50,21 +50,12 @@ const products = [
 
 const Katalog = () => {
   return (
-    <div className="mt-24 px-8">
+    <div className="py-24 px-8">
       <div className="mb-8">
-        <h1 className="text-4xl font-bold">Product Catalogue</h1>
+        <h1 className="text-4xl font-bold mb-4">All Products</h1>
         <p className="text-gray-500">
-          Explore our delicious homemade cookies from Alzam B'Cookies.
+          Discover the taste of our homemade cookies
         </p>
-      </div>
-
-      {/* search */}
-      <div className="flex gap-4 mb-8">
-        <input
-          type="text"
-          placeholder="Search..."
-          className="border rounded-lg px-4 py-2 w-80"
-        />
       </div>
 
       {/* grid produk */}
@@ -76,12 +67,9 @@ const Katalog = () => {
               alt={product.name}
               className="rounded-md mb-3"
             />
-
             <h3 className="font-semibold text-lg">{product.name}</h3>
-
-            <p className="text-gray-500 text-sm">{product.desc}</p>
-
-            <p className="text-pink-600 font-bold mt-2">{product.price}</p>
+            <p className="text-sm">{product.desc}</p>
+            <p className="font-bold mt-2">{product.price}</p>
           </Card>
         ))}
       </div>

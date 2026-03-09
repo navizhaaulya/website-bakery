@@ -4,8 +4,7 @@ import ProductCard from "../components/elements/ProductCard";
 import nastar from "../components/assets/nastar.png";
 import kastengel from "../components/assets/kastengel.png";
 import salju from "../components/assets/salju.png";
-import Card from "../components/elements/Card";
-import TestimonialSection from "./testimonial";
+import TestimonialSection from "../components/sections/testimonial";
 
 const topProducts = [
   { name: "Nastar", image: nastar },

@@ -1,6 +1,6 @@
 function TestimonialCard({ name, review }) {
   return (
-    <div className="bg-white shadow-md rounded-xl p-6 max-w-sm">
+    <div className="bg-white border rounded-xl p-6 max-w-sm">
       <p className="text-gray-600 italic">
         "{review}"
       </p>

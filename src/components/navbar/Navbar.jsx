@@ -9,7 +9,6 @@ const Navbar = () => {
 
   const NavbarMenu = [
     { id: 1, title: "Catalogue", link: "/catalogue" },
-    { id: 2, title: "Contact Us", link: "/contact" },
     { id: 3, title: "FAQ", link: "/faq" },
   ];
 
@@ -19,8 +18,7 @@ const Navbar = () => {
         <div className="container flex justify-between items-center py-4 px-4 md:px-8">
           {/* logo */}
           <div className="text-2xl flex items-center gap-3 font-bold text-white">
-            <img
-            src={Logo} alt="logo" className="w-10" />
+            <img src={Logo} alt="logo" className="w-10" />
             <a href="/">Alzam B'Cookies</a>
           </div>
 
