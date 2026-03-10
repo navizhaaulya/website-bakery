@@ -1,8 +1,16 @@
 import nastar from "../components/assets/nastar.png";
 import kastengel from "../components/assets/kastengel.png";
 import salju from "../components/assets/salju.png";
+import lidah from "../components/assets/lidah-kucing.png";
 import sagu from "../components/assets/sagu-keju.png";
-import semprit from "../components/assets/sagu-palm.png";
+import almond from "../components/assets/almond.png";
+import choco from "../components/assets/choco.png";
+import palm from "../components/assets/palm.png";
+import goodTime from "../components/assets/goodTime.png";
+import berry from "../components/assets/berry.png";
+import chocojam from "../components/assets/thumbprint-choco.png";
+import kacang from "../components/assets/kacang.png";
+import semprit from "../components/assets/semprit.png";
 import fisrtHampers from "../components/assets/hampers-1.png";
 import scndHampers from "../components/assets/hampers-2.png";
 import hampersThree from "../components/assets/hampers-3.png";
@@ -30,13 +38,25 @@ const products = [
   },
   {
     name: "Good Time",
-    image: nastar,
+    image: goodTime,
     price: "Rp 30.000",
     desc: "Crunchy chocolate chip cookies with a sweet taste.",
   },
   {
     name: "Lidah Kucing",
-    image: kastengel,
+    image: lidah,
+    price: "Rp 30.000",
+    desc: "Thin and crispy butter cookies.",
+  },
+  {
+    name: "Thumbprint Berry",
+    image: berry,
+    price: "Rp 30.000",
+    desc: "Thin and crispy butter cookies.",
+  },
+  {
+    name: "Thumbprint Choco",
+    image: chocojam,
     price: "Rp 30.000",
     desc: "Thin and crispy butter cookies.",
   },
@@ -49,6 +69,30 @@ const products = [
   {
     name: "Semprit",
     image: semprit,
+    price: "Rp 25.000",
+    desc: "Classic butter cookies with a soft texture.",
+  },
+  {
+    name: "Almond Cookies",
+    image: almond,
+    price: "Rp 40.000",
+    desc: "Classic butter cookies with a soft texture.",
+  },
+  {
+    name: "Choco Cornflake",
+    image: choco,
+    price: "Rp 25.000",
+    desc: "Classic butter cookies with a soft texture.",
+  },
+  {
+    name: "Peanut Cookies",
+    image: kacang,
+    price: "Rp 25.000",
+    desc: "Classic butter cookies with a soft texture.",
+  },
+  {
+    name: "Palm Cheese",
+    image: palm,
     price: "Rp 25.000",
     desc: "Classic butter cookies with a soft texture.",
   },
@@ -66,7 +110,7 @@ const products = [
   },
   {
     name: "Hampers 3",
-    image:  hampersThree,
+    image: hampersThree,
     price: "Rp 100.000",
     desc: "A hampers box with three cookie varieties.",
   },
@@ -81,7 +125,6 @@ const products = [
 const Katalog = () => {
   return (
     <div className="py-20 px-12">
-      {/* Title */}
       <div className="mb-12">
         <h1 className="text-4xl font-bold mb-4 mt-10">All Products</h1>
         <p className="text-gray-500">
@@ -89,31 +132,23 @@ const Katalog = () => {
         </p>
       </div>
 
-      {/* Grid Produk */}
       <div className="grid grid-cols-4 gap-6">
         {products.map((product, index) => (
           <Card
             key={index}
             className="group border rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 cursor-pointer p-4 flex flex-col items-center text-center"
           >
-            {/* Nama Produk */}
             <CardTitle tag="h6" className="font-semibold text-lg mb-2">
               {product.name}
             </CardTitle>
-
-            {/* Gambar */}
             <CardImg
               src={product.image}
               alt={product.name}
               className="w-24 h-24 object-contain mb-2 transition-transform duration-300 group-hover:scale-105"
             />
-
-            {/* Deskripsi */}
             <CardText className="text-xs text-gray-500 mb-2 line-clamp-2">
               {product.desc}
             </CardText>
-
-            {/* Harga */}
             <CardBody className="p-0">
               <p className="font-semibold text-gray-800">{product.price}</p>
             </CardBody>

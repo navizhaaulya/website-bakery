@@ -1,4 +1,4 @@
-import heroImg from "../components/assets/hero-section.jpg";
+import heroImg from "../components/assets/hero-section.png";
 import aboutImg from "../components/assets/about-us.png";
 import ServiceCard from "../components/elements/ServiceCard";
 import sfresh from "../components/assets/service-fresh.jpg";
@@ -11,6 +11,7 @@ import nastar from "../components/assets/nastar.png";
 import kastengel from "../components/assets/kastengel.png";
 import salju from "../components/assets/salju.png";
 import TestimonialSection from "../components/sections/Testimonial";
+import { motion } from "framer-motion";
 
 const topProducts = [
   {
@@ -61,24 +62,40 @@ const services = [
   },
 ];
 
+
 const Homepage = () => {
   return (
     <>
       {/* hero section */}
-      <section
+      <motion.section
         className="relative h-screen w-screen bg-cover bg-center flex items-center justify-center"
         style={{ backgroundImage: `url(${heroImg})` }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
       >
         <div className="absolute inset-0 bg-white/50"></div>
+
         <div className="relative">
-          <p className="text-4xl text-center pt-20 font-semibold mb-4">
+          <motion.p
+            className="text-4xl text-center mt-0 font-semibold mb-4"
+            initial={{ y: -50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
             Alzam B'Cookies
-          </p>
-          <p className="text-center font-medium text-2xl">
+          </motion.p>
+
+          <motion.p
+            className="text-center font-medium text-2xl font-poppins"
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1, delay: 0.3 }}
+          >
             Premium Cookies for Your Festive Moments
-          </p>
+          </motion.p>
         </div>
-      </section>
+      </motion.section>
 
       {/* about us */}
       <section
