@@ -17,28 +17,15 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* produk */}
-          <div>
-            <h3 className="text-lg font-medium mb-2">Produk</h3>
-            <ul className="space-y-1">
-              <li>
-                <a href="#kategori">Kategori</a>
-              </li>
-              <li>
-                <a href="/katalog">Katalog</a>
-              </li>
-            </ul>
-          </div>
-
           {/* menu */}
           <div>
             <h3 className="text-lg font-medium mb-2">Menu</h3>
             <ul className="space-y-1">
               <li>
-                <a href="/riwayat">Riwayat</a>
+                <a href="/catalogue">Catalogue</a>
               </li>
               <li>
-                <a href="/bantuan">Bantuan</a>
+                <a href="/faq">FAQ</a>
               </li>
             </ul>
           </div>

@@ -30,7 +30,7 @@ function TestimonialSection() {
     hidden: {},
     show: {
       transition: {
-        staggerChildren: 0.2, // card muncul 0.2s bergantian
+        staggerChildren: 0.2,
       },
     },
   };
@@ -48,7 +48,7 @@ function TestimonialSection() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
-        className="grid md:grid-cols-3 gap-8 justify-items-center px-8"
+        className="grid md:grid-cols-3 gap-6 justify-items-center px-8"
       >
         {testimonials.map((item, index) => (
           <TestimonialCard

@@ -13,9 +13,24 @@ import salju from "../components/assets/salju.png";
 import TestimonialSection from "../components/sections/Testimonial";
 
 const topProducts = [
-  { name: "Nastar", image: nastar, desc: "Sweet pineapple filling", price: "35k" },
-  { name: "Kastengel", image: kastengel, desc: "Savory cheese cookie", price: "35k" },
-  { name: "Putri Salju", image: salju, desc: "Soft sugar cookie", price: "30k" },
+  {
+    name: "Nastar",
+    image: nastar,
+    desc: "Sweet pineapple filling",
+    price: "35k",
+  },
+  {
+    name: "Kastengel",
+    image: kastengel,
+    desc: "Savory cheese cookie",
+    price: "35k",
+  },
+  {
+    name: "Putri Salju",
+    image: salju,
+    desc: "Soft sugar cookie",
+    price: "30k",
+  },
 ];
 
 const services = [
@@ -51,14 +66,15 @@ const Homepage = () => {
     <>
       {/* hero section */}
       <section
-        className="h-screen w-screen bg-cover bg-center flex items-center justify-center"
+        className="relative h-screen w-screen bg-cover bg-center flex items-center justify-center"
         style={{ backgroundImage: `url(${heroImg})` }}
       >
-        <div>
-          <p className="slogan text-4xl text-center pt-20 font-semibold">
+        <div className="absolute inset-0 bg-white/50"></div>
+        <div className="relative">
+          <p className="text-4xl text-center pt-20 font-semibold mb-4">
             Alzam B'Cookies
           </p>
-          <p className="deskslogan text-center font-medium text-2xl">
+          <p className="text-center font-medium text-2xl">
             Premium Cookies for Your Festive Moments
           </p>
         </div>
@@ -104,7 +120,7 @@ const Homepage = () => {
 
       {/* top products */}
       <section className="">
-        <h1 className="font-bold text-3xl text-center">Best Seller</h1>
+        <h1 className="font-bold text-3xl text-center mb-4">Best Seller</h1>
         <ProductCard products={topProducts} />
       </section>
 

@@ -20,21 +20,23 @@ const Navbar = () => {
             {/* logo */}
             <div className="text-2xl flex items-center gap-3 font-bold text-white">
               <img src={Logo} alt="logo" className="w-10" />
-              <a href="/" className="text-white no-underline">Alzam B'Cookies</a>
+              <a href="/" className="text-white no-underline">
+                Alzam B'Cookies
+              </a>
             </div>
 
             {/* desktop menu */}
             <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 text-white items-center gap-8">
-    {NavbarMenu.map((item) => (
-      <a
-        key={item.id}
-        href={item.link}
-        className="px-4 py-1 rounded-full text-white no-underline hover:bg-white/20 transition"
-      >
-        {item.title}
-      </a>
-    ))}
-  </div>
+              {NavbarMenu.map((item) => (
+                <a
+                  key={item.id}
+                  href={item.link}
+                  className="px-4 py-1 rounded-full text-white no-underline hover:bg-white/20 transition"
+                >
+                  {item.title}
+                </a>
+              ))}
+            </div>
 
             {/* hamburger */}
             <div className="md:hidden text-white">
