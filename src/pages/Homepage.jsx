@@ -62,7 +62,6 @@ const services = [
   },
 ];
 
-
 const Homepage = () => {
   return (
     <>
@@ -74,20 +73,24 @@ const Homepage = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <div className="absolute inset-0 bg-white/50"></div>
+        
+        <div className="absolute w-96 h-96 bg-yellow-200 rounded-full blur-3xl opacity-30 top-40 left-20"></div>
+        <div className="absolute w-96 h-96 bg-orange-200 rounded-full blur-3xl opacity-30 top-40 right-20"></div>
 
-        <div className="relative">
-          <motion.p
-            className="text-4xl text-center mt-0 font-semibold mb-4"
+
+
+        <div className="relative mt-10 text-center">
+          <motion.h1
+            className="text-6xl pb-4 font-bold font-heading mb-4"
             initial={{ y: -50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1 }}
           >
             Alzam B'Cookies
-          </motion.p>
+          </motion.h1>
 
           <motion.p
-            className="text-center font-medium text-2xl font-poppins"
+            className="font-medium text-2xl font-poppins mb-10"
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 0.3 }}
@@ -96,14 +99,14 @@ const Homepage = () => {
           </motion.p>
         </div>
       </motion.section>
-
+      
       {/* about us */}
       <section
         className="h-screen w-screen bg-cover bg-center flex items-center justify-center"
         style={{ backgroundImage: `url(${aboutImg})` }}
       >
         <div>
-          <h2 className="text-3xl font-bold mb-4 text-center">
+          <h2 className="text-3xl font-bold mb-4 text-center font-heading">
             From a Small Kitchen
             <br />
             to Something Truly Special
@@ -147,7 +150,9 @@ const Homepage = () => {
       {/* lokasi */}
       <section className="mb-10">
         <div className="p-8">
-          <h2 className="text-3xl font-bold text-center mb-8">Lokasi Kami</h2>
+          <h2 className="text-4xl font-bold text-center mb-8 font-heading">
+            Lokasi Kami
+          </h2>
           <div className="w-full h-96 rounded-lg overflow-hidden shadow-lg">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.169220049421!2d110.4260321741077!3d-6.989339568446815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708ca72f8460b7%3A0xddd36d89e4e68ca6!2sJl.%20Seroja%20Tim.%2C%20Karangkidul%2C%20Kec.%20Semarang%20Tengah%2C%20Kota%20Semarang%2C%20Jawa%20Tengah%2050136!5e0!3m2!1sid!2sid!4v1772957379848!5m2!1sid!2sid"

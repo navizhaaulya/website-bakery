@@ -126,7 +126,7 @@ const Katalog = () => {
   return (
     <div className="py-20 px-12">
       <div className="mb-12">
-        <h1 className="text-4xl font-bold mb-4 mt-10">All Products</h1>
+        <h1 className="text-5xl font-bold mb-4 mt-10 font-heading">All Products</h1>
         <p className="text-gray-500">
           Discover the taste of our homemade cookies
         </p>
