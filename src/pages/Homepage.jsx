@@ -67,17 +67,14 @@ const Homepage = () => {
     <>
       {/* hero section */}
       <motion.section
-        className="relative h-screen w-screen bg-cover bg-center flex items-center justify-center"
+        className="relative h-screen w-screen bg-cover bg-center flex items-start justify-center pt-40"
         style={{ backgroundImage: `url(${heroImg})` }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        
         <div className="absolute w-96 h-96 bg-yellow-200 rounded-full blur-3xl opacity-30 top-40 left-20"></div>
         <div className="absolute w-96 h-96 bg-orange-200 rounded-full blur-3xl opacity-30 top-40 right-20"></div>
-
-
 
         <div className="relative mt-10 text-center">
           <motion.h1
@@ -99,7 +96,7 @@ const Homepage = () => {
           </motion.p>
         </div>
       </motion.section>
-      
+
       {/* about us */}
       <section
         className="h-screen w-screen bg-cover bg-center flex items-center justify-center"
